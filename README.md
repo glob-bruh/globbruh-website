@@ -1,2 +1,3 @@
 # globbruh-website
-glob-bruh website code.
+
+**Repo for website.**
