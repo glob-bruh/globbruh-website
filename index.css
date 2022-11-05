@@ -37,6 +37,13 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 
+#titleImg {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
 #bottomText {
     font-size: 75%;
     font-weight: bold;
