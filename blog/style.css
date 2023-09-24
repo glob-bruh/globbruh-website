@@ -46,9 +46,17 @@ img {
     max-width: 65%;
 }
 
+#imgReduced {
+    max-width: 40%;
+}
+
 @media all and (max-width: 450px) {
     img {
         max-width: 80%;
+    }
+
+    #imgReduced {
+        max-width: 65%;
     }
 }
 
@@ -123,6 +131,7 @@ hr {
 
 #txtCaption {
 	font-family: 'Sedgwick Ave', cursive;
+    font-size: 13px;
 	display: block;
 	text-align: center;
 }
