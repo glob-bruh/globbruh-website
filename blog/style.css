@@ -60,11 +60,11 @@ img {
     }
 }
 
-a {
+a[href] {
     color: #707070;
 }
 
-a:hover {
+a[href]:hover {
     color: #a1a1a1;
     transition-duration: 500ms;
 }
