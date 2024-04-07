@@ -25,6 +25,7 @@
     <center><h4><a href="../bloghome.html">Return to Blog Home</a></h4></center>
     <h3>Navigation:</h3>
     <ul>
+        <li><a href="#linuxTermSerialCon">Linux - Enable Terminal Serial Connection</a></li>
         <li><a href="#pyTimesSec">Python - Iterate Amount of Times Per Second</a></li>
         <li><a href="#linuxDiskEncPart">Linux Manual Partitioning - Disk Encryption</a></li>
         <li><a href="#tmuxSimpleUsage">Tmux - Simple Usage</a></li>
@@ -32,7 +33,15 @@
     </ul>
 
     <hr>
-
+    
+    <h3><a id="linuxTermSerialCon">Linux - Enable Terminal Serial Connection</a></h3>
+    <ol>
+        <li>Run <code>lsusb</code> and <code>ls -l /dev/</code> to find the device to host serial connection.</li>
+        <li>Run <code>sudo systemctl start getty@tty[DEVICE-ID].service</code> to start serial connection.</li>
+        <li>Run <code>sudo systemctl enable getty@tty[DEVICE-ID].service</code> to let serial connection run on boot.</li>
+        <li>Run <code>sudo systemctl status getty@tty[DEVICE-ID].service</code> to get serial connection status.</li>
+    </ol>
+    
     <h3><a id="pyTimesSec">Python - Iterate Amount of Times Per Second</a></h3>
     <pre><code>
 import time
