@@ -63,3 +63,10 @@ footer > p {
     font-size: 250%;
     font-family: 'Poppins', sans-serif;
 }
+
+#headIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
