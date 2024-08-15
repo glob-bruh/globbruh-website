@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GlobBruh</title>
+        <title>HOME | GlobBruh</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -19,16 +19,17 @@
             <h1 id="titleText">GlobBruh</h1>
             <img src="https://avatars.githubusercontent.com/u/34488272">
             <p title="IN ORDER: Bash, C#, CSS, .NET, HTML, JavaScript, Markdown, MySQL, PHP, PowerShell, Python.">
-                <a href="https://skillicons.dev">
-                  <img id="headIcon" src="https://skillicons.dev/icons?i=bash,cs,css,dotnet,html,js,md,mysql,php,powershell,py" />
-                </a>
+                <img id="headIcon" src="https://skillicons.dev/icons?i=bash,cs,css,dotnet,html,js,md,mysql,php,powershell,py" />
             </p>
             <p title="IN ORDER: Arduino, Azure, Debian, Docker, Git, Kali Linux, Nginx, Raspberry Pi, VSCodium, Windows.">
-                <a href="https://skillicons.dev">
-                  <img id="headIcon" src="https://skillicons.dev/icons?i=arduino,azure,debian,docker,git,kali,nginx,raspberrypi,vscodium,windows" />
-                </a>
+                <img id="headIcon" src="https://skillicons.dev/icons?i=arduino,azure,debian,docker,git,kali,nginx,raspberrypi,vscodium,windows" />
             </p>
             <hr>
+            <div id="headerNav">
+                <button id="active">HOME</button>
+                <button onclick="window.location.href = 'projects.html'">PROJECTS</button>
+                <button onclick="window.location.href = 'blog/bloghome.html'">BLOG and RESOURCES</button>
+            </div>
         </header>
         <article>
             <h2>$(whoami):</h2>
@@ -36,19 +37,16 @@
             <p>Feel free to use and contribute to any of the projects I have available on GitHub.</p>
         </article>
         <article>
-            <h2>Projects:</h2>
-            <p>You can find projects I have worked on by visiting <a href="https://github.com/glob-bruh?tab=repositories&type=source">my profile</a>.</p>
-            <p>I also write reports or papers, pertaining mostly to technology. You can read them <a href="blog/bloghome.html">here</a>.</p>
-        </article>
-        <article>
-            <h2>Other websites I'm on:</h2>
+            <h2>Websites I use:</h2>
             <ul>
+                <li><a href="https://app.hackthebox.com/users/279213">Hack The Box (account required)</a></li>
                 <li><a href="https://tryhackme.com/p/globbruh">TryHackMe</a></li>
-                <li><a href="https://app.hackthebox.com/users/279213">Hack The Box (account is needed to view)</a></li>
+                <li><a href="https://blueteamlabs.online/home/user/4b21f74518ba720c207d68>">Blue Team Labs Online (account required)</a></li>
             </ul>
         </article>
         <footer>
-            <p>Developed by GlobBruh - 2024</p>
+            <p>Website developed from scratch by me.<br />&copy; GlobBruh -  2024.</p>
+            <p>This website is <a href="https://github.com/glob-bruh/globbruh-website">open-source</a> for transparency.</p>
         </footer>
     </body>
 </html>

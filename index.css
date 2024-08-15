@@ -9,6 +9,21 @@ body {
     max-width: calc(100% - 6em);
 }
 
+@media (max-width: 500px) {
+    header > div#headerNav > button {
+        height: 60px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0px;
+    }
+    header > div#headerNav {
+        width: 100%;
+    }
+    div.projFeature > button {
+        width: 75%;
+    }
+}
+
 header > h1 {
     text-align: center;
 }
@@ -24,9 +39,46 @@ header > img {
     height: auto;
 }
 
+div#headerNav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 75%
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #707070;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #a1a1a1;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+button#active {
+    background-color: #a1a1a1;
+}
+
 h2 {
     color: #159957;
     font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
 }
 
 p {
@@ -39,9 +91,42 @@ ul {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
+div.projFeature {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #2e2e2e;
+    border-radius: 20px;
+}
+
+div.projFeature > h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.projFeature > img {
+    width: 100%;
+    max-width: 100px;
+    margin: 5px;
+}
+
+div.projFeature > button {
+    max-width: 250px;
+}
+
+div.projFeature > p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a[href] {
     color: #707070;
     font-weight: bold;
+}
+
+a[href]:hover {
+    color: #a1a1a1;
+    transition-duration: 500ms;
 }
 
 footer {
@@ -69,4 +154,8 @@ footer > p {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+}
+
+p#center {
+    text-align: center;
 }
